@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/icon.png" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:wght@700&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+  <title>TELE 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="TELE 2">
+  <meta property="og:description"
+    content="Сотовая связь и интернет от ведущего оператора t2. Самые выгодные звонки с мобильного без переплат.">
+  <meta property="og:image" content="http://localhost:5173/icon.png">
+  <meta property="og:url" content="http://localhost:5173/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Website",
+      "headline": "TELE 2",
+      "description": "Сотовая связь и интернет от ведущего оператора t2. Самые выгодные звонки с мобильного без переплат.",
+      "image": "http://localhost:5173/icon.png",
+      "author": {
+        "@type": "Person",
+        "name": "Lera"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "IThub"
+      }
+    }
+    </script>
+  <!-- 
+  <link rel="icon" type="image/png" href="/http://localhost:5173/icon.png/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/http://localhost:5173/icon.png/favicon.svg" />
+  <link rel="shortcut icon" href="/http://localhost:5173/icon.png/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/http://localhost:5173/icon.png/apple-touch-icon.png" />
+  <link rel="manifest" href="/http://localhost:5173/icon.png/site.webmanifest" /> -->
+</head>
+
+<body>
+  <header>
+    <img class="logo_img" src="/Logo.png" alt="">
+    <div class="city">
+      <img class="location" id="location" src="/location.png" alt="">
+      <p class="choose_city" id="city">Город не выбран</p>
+      <dialog class="dialog" id="dialog">
+        <select class="select" id="choose_city">
+          <option value="Воронеж">Воронеж</option>
+          <option value="Иркутск">Иркутск</option>
+          <option value="Кемерово">Кемерово</option>
+          <option value="Красноярск">Красноярск</option>
+          <option value="Москва">Москва</option>
+          <option value="Н. Новгород">Н.Новгород</option>
+          <option value="Новосибирск">Новосибирск</option>
+          <option value="Пермь">Пермь</option>
+          <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+          <option value="Санкт-Петербург">Санкт-Петербург</option>
+          <option value="Челябинск">Челябинск</option>
+        </select>
+      </dialog>
+    </div>
+  </header>
+
+  <article>
+    <div class="information">
+      <p class="time">Акция продлится с 1 по 20 сентября</p>
+      <div class="text">
+        <h1 class="white_text">ЭТО ВАША</h1>
+        <h2 class="blue_text">ВЫГОДА!</h2>
+        <p class="rate">Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов</p>
+      </div>
+      <button class="button" id="button">Принять участие</button>
+      <dialog id="participate" class="dialog_phone">
+        <form id="form" class="form_dialog">
+          <div class="phone_dialog">
+            <input id="input" class="input" type="tel" required>
+            <label for="input" class="phone_text_dialog">Номер телефона</label>
+          </div>
+
+          <div class="consent">
+            <input class="checkbox" type="checkbox">
+            <p class="text">Даю согласие на обработку персональных данных.<a class="link" href="">Условия
+                соглашения.</a></p>
+          </div>
+
+          <div id="validation"></div>
+
+          <button type="submit" class="promocode" id="promocode">Выслать промокод</button>
+        </form>
+      </dialog>
+    </div>
+
+    <img class="image_of_man" src="/Boss1 2.png" alt="">
+  </article>
+
+  <main>
+    <section class="what_you_get">
+      <h1 class="tb">Один терабайт — много любимых развлечений</h1>
+      <p class="conditions">Подарок получают только новые абоненты при подключении услуг Tele2
+        с тарифом «Мой онлайн+». Трафик расходуется в течение года. </p>
+      <section class="blocks">
+        <div class="block">
+          <img class="image" src="/video.png" alt="">
+          <p class="text_of_block">Около 500 часов видео</p>
+        </div>
+        <div class="block">
+          <img class="image" src="/headphones.png" alt="">
+          <p class="text_of_block">Примерно 200 000 песен</p>
+        </div>
+        <div class="block">
+          <img class="image" src="/photo.png" alt="">
+          <p class="text_of_block">Порядка 300 000 фото</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="steps">
+      <section class="form">
+        <h1 class="w_text">Несколько шагов</h1>
+        <h2 class="b_text">и 1 ТБ — ваш</h2>
+
+        <div class="phone">
+          <input id="phone" class="phone_form" type="phone" required>
+          <label for="phone" class="phone_text">Номер телефона</label>
+        </div>
+
+        <div class="consent">
+          <input class="checkbox" type="checkbox">
+          <p class="text">Даю согласие на обработку персональных данных.<a class="link" href="">Условия
+              соглашения.</a></p>
+        </div>
+
+        <div id="validation2"></div>
+
+        <button class="promocode">Выслать промокод</button>
+      </section>
+
+      <section class="three_steps">
+        <div class="step">
+          <h1 class="number">1</h1>
+          <p class="text_of_step">Введите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
+        </div>
+        <div class="step">
+          <h1 class="number">2</h1>
+          <p class="text_of_step">Перейдите на <a href="" class="second_link">сайт Tele2</a> и активируйте промокод при
+            подключении на тариф «Мой Онлайн+»
+          </p>
+        </div>
+        <div class="step">
+          <h1 class="number">3</h1>
+          <p class="text_of_step">Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="tele2">
+      <div class="text_button">
+        <h1 class="text_tele2">Заходите на сайт Tele2</h1>
+        <p class="actions">Перейдите в магазин, оформите тариф «Мой онлайн+» и на страничке активации введите ваш
+          промокод.
+          Готово!
+        </p>
+        <button onclick="window.open('https://rostov.t2.ru/', '_blank')" class="rate_button">Оформить тариф</button>
+      </div>
+
+      <img class="image_tele2" src="/tele2.png" alt="">
+    </section>
+
+    <button class="back" id="to_top">↑</button>
+  </main>
+
+  <footer>
+    <section class="upper_part">
+      <div class="social_networks">
+        <img class="social_network_img" src="/Twitter.png" alt="">
+        <img class="social_network_img" src="/VKontakte.png" alt="">
+        <img class="social_network_img" src="/Facebook.png" alt="">
+      </div>
+
+      <div class="conditions_age">
+        <p class="condition_text">Полные условия акции</p>
+        <img class="age" src="/age.png" alt="">
+      </div>
+    </section>
+
+    <div class="underline"></div>
+
+    <section class="lower_part">
+      <div class="logo_tele2">
+        <img class="logo_tele2" src="/Logo.png" alt="">
+        <p class="text_of_tele2">© Tele2 Россия, 2021</p>
+      </div>
+
+      <div class="chulakov">
+        <p class="text_of_chulakov">Сделано в Студии Олега Чулакова</p>
+        <img class="logo_chulakov" src="/chulakov_logo.png" alt="">
+      </div>
+    </section>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
