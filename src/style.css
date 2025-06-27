@@ -3,6 +3,7 @@ body {
   margin: 0;
   max-width: 1536px;
   width: 100%;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -546,6 +547,11 @@ footer {
   visibility: visible;
 }
 
+.consent2 {
+  display: flex;
+  gap: 15px;
+}
+
 @media(max-width: 810px) {
   body {
     width: 810px;
@@ -553,6 +559,14 @@ footer {
 
   .choose_city {
     font-size: 18px;
+  }
+
+  .dialog {
+    margin: 68px 0px 0px 590px;
+  }
+
+  .dialog_phone {
+    margin: 200px 400px 200px 100px;
   }
 
   article {
@@ -705,6 +719,10 @@ footer {
     font-size: 18px;
   }
 
+  .dialog {
+    margin: 68px 0px 0px 100px;
+  }
+
   article {
     margin: 24px 13px;
     flex-direction: column;
@@ -713,6 +731,8 @@ footer {
 
   .information {
     gap: 40px;
+    align-items: center;
+    text-align: center;
   }
 
   .time {
